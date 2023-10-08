@@ -1,5 +1,7 @@
 import mongoose, { connection } from "mongoose";
 
+// MONGO_URI=mongodb+srv://nextjs:KCR7YceSxIB4ZQji@cluster0.uoqoyom.mongodb.net/
+
 export async function connect() {
     try {
         mongoose.connect(process.env.MONGO_URI!);
